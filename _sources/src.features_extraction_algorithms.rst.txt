@@ -1,0 +1,29 @@
+src.features\_extraction\_algorithms package
+============================================
+
+Submodules
+----------
+
+src.features\_extraction\_algorithms.hog\_algorithm module
+----------------------------------------------------------
+
+.. automodule:: src.features_extraction_algorithms.hog_algorithm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.features\_extraction\_algorithms.sift\_algorithm module
+-----------------------------------------------------------
+
+.. automodule:: src.features_extraction_algorithms.sift_algorithm
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.features_extraction_algorithms
+   :members:
+   :undoc-members:
+   :show-inheritance:

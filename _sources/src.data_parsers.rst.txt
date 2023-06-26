@@ -1,0 +1,45 @@
+src.data\_parsers package
+=========================
+
+Submodules
+----------
+
+src.data\_parsers.parse\_img module
+-----------------------------------
+
+.. automodule:: src.data_parsers.parse_img
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.data\_parsers.parse\_json\_source module
+--------------------------------------------
+
+.. automodule:: src.data_parsers.parse_json_source
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.data\_parsers.parse\_to\_boxes module
+-----------------------------------------
+
+.. automodule:: src.data_parsers.parse_to_boxes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.data\_parsers.parse\_to\_hog module
+---------------------------------------
+
+.. automodule:: src.data_parsers.parse_to_hog
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.data_parsers
+   :members:
+   :undoc-members:
+   :show-inheritance:

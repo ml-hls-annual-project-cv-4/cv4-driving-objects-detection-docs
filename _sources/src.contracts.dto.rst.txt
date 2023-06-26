@@ -1,0 +1,21 @@
+src.contracts.dto package
+=========================
+
+Submodules
+----------
+
+src.contracts.dto.dataset\_dto module
+-------------------------------------
+
+.. automodule:: src.contracts.dto.dataset_dto
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.contracts.dto
+   :members:
+   :undoc-members:
+   :show-inheritance:

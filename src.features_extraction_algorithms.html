@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src.features_extraction_algorithms package &mdash; cv4-driving-objects-detection 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="src.json_services package" href="src.json_services.html" />
+    <link rel="prev" title="src.factoring package" href="src.factoring.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            cv4-driving-objects-detection
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">src</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="src.html">src package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="src.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="src.contracts.html">src.contracts package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.conversion.html">src.conversion package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.data_parsers.html">src.data_parsers package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.decoration.html">src.decoration package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.deep_learning.html">src.deep_learning package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.factoring.html">src.factoring package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">src.features_extraction_algorithms package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.json_services.html">src.json_services package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.providing.html">src.providing package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="src.sql_services.html">src.sql_services package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="src.html#module-src">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">cv4-driving-objects-detection</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">src</a></li>
+          <li class="breadcrumb-item"><a href="src.html">src package</a></li>
+      <li class="breadcrumb-item active">src.features_extraction_algorithms package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/src.features_extraction_algorithms.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="src-features-extraction-algorithms-package">
+<h1>src.features_extraction_algorithms package<a class="headerlink" href="#src-features-extraction-algorithms-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-src.features_extraction_algorithms.hog_algorithm">
+<span id="src-features-extraction-algorithms-hog-algorithm-module"></span><h2>src.features_extraction_algorithms.hog_algorithm module<a class="headerlink" href="#module-src.features_extraction_algorithms.hog_algorithm" title="Permalink to this headline"></a></h2>
+<p>This module provides pipeline for “one-image” prediction using hog vectors.
+It’s supposed to be used by fastapi predict_service.
+We can pass an image local path or image parsed as a ndarray.
+To make a prediction meaningful we should pass image with boxes coordinates or precutted image.</p>
+<p>Pipeline #1: Pass any image and two point coordinates.
+These coordinates will be considered as rectangle’s diagonal points and used for cutting a box.
+This box will be the final image we are gonna work with.
+—————————————-
+HogPredict(img_path=’11219096-d4840255.jpg’)     .cut_box(x1, y1, x2, y2)     .convert_to_hog()     .make_pred()
+—————————————-</p>
+<p>Pipeline #2: Pass a prepared image. The object you want to classify must take the whole image area.
+It can be any image but be sure it will be recognized as a car no matter what it is.
+Instead of passing img_path we can provide np.ndarray corresponded to image.
+—————————————-
+HogPredict(data=img_bgr_array)     .convert_to_hog()     .make_pred()
+—————————————-</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.features_extraction_algorithms.hog_algorithm.HogPredict">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.features_extraction_algorithms.hog_algorithm.</span></span><span class="sig-name descname"><span class="pre">HogPredict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/features_extraction_algorithms/hog_algorithm.html#HogPredict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.features_extraction_algorithms.hog_algorithm.HogPredict" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.features_extraction_algorithms.hog_algorithm.HogPredict.convert_to_hog">
+<span class="sig-name descname"><span class="pre">convert_to_hog</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/features_extraction_algorithms/hog_algorithm.html#HogPredict.convert_to_hog"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.features_extraction_algorithms.hog_algorithm.HogPredict.convert_to_hog" title="Permalink to this definition"></a></dt>
+<dd><p>To use hog vectors in any model we need them to be the same length.
+To reach that goal we’re standartizing all images to one shape (width/height rate).
+After that func converts image 2d array to hog vector</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.features_extraction_algorithms.hog_algorithm.HogPredict.cut_box">
+<span class="sig-name descname"><span class="pre">cut_box</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/features_extraction_algorithms/hog_algorithm.html#HogPredict.cut_box"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.features_extraction_algorithms.hog_algorithm.HogPredict.cut_box" title="Permalink to this definition"></a></dt>
+<dd><p>Function cuts box from image array by two points coordinates.
+Coordinates can be float or integer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.features_extraction_algorithms.hog_algorithm.HogPredict.make_pred">
+<span class="sig-name descname"><span class="pre">make_pred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'src/features_extraction_algorithms/best_hog_estimator_short.pickle'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/features_extraction_algorithms/hog_algorithm.html#HogPredict.make_pred"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.features_extraction_algorithms.hog_algorithm.HogPredict.make_pred" title="Permalink to this definition"></a></dt>
+<dd><p>Function makes prediction for one hog vector. The shape must be (1, 1568).
+If a simple array were passed it’s gonna be converted to consistent format
+It can be a ndarray or a DataFrame.
+We are using precalculated lightgbm model for prediction</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-src.features_extraction_algorithms.sift_algorithm">
+<span id="src-features-extraction-algorithms-sift-algorithm-module"></span><h2>src.features_extraction_algorithms.sift_algorithm module<a class="headerlink" href="#module-src.features_extraction_algorithms.sift_algorithm" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.features_extraction_algorithms.sift_algorithm.create_features_bow">
+<span class="sig-prename descclassname"><span class="pre">src.features_extraction_algorithms.sift_algorithm.</span></span><span class="sig-name descname"><span class="pre">create_features_bow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_descriptors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bow</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_cluster</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/features_extraction_algorithms/sift_algorithm.html#create_features_bow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.features_extraction_algorithms.sift_algorithm.create_features_bow" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.features_extraction_algorithms.sift_algorithm.extract_sift_descriptors">
+<span class="sig-prename descclassname"><span class="pre">src.features_extraction_algorithms.sift_algorithm.</span></span><span class="sig-name descname"><span class="pre">extract_sift_descriptors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">images</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/features_extraction_algorithms/sift_algorithm.html#extract_sift_descriptors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.features_extraction_algorithms.sift_algorithm.extract_sift_descriptors" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.features_extraction_algorithms.sift_algorithm.k_mean_bow">
+<span class="sig-prename descclassname"><span class="pre">src.features_extraction_algorithms.sift_algorithm.</span></span><span class="sig-name descname"><span class="pre">k_mean_bow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_descriptors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_cluster</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/src/features_extraction_algorithms/sift_algorithm.html#k_mean_bow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#src.features_extraction_algorithms.sift_algorithm.k_mean_bow" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-src.features_extraction_algorithms">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-src.features_extraction_algorithms" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="src.factoring.html" class="btn btn-neutral float-left" title="src.factoring package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="src.json_services.html" class="btn btn-neutral float-right" title="src.json_services package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Анисимов Данила, Головкина Ольга, Коваленко Максим.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

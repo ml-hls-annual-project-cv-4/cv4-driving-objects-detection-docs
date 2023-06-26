@@ -1,0 +1,29 @@
+src.decoration package
+======================
+
+Submodules
+----------
+
+src.decoration.dl\_logging\_decorator module
+--------------------------------------------
+
+.. automodule:: src.decoration.dl_logging_decorator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.decoration.yolo\_data\_prepare\_decorator module
+----------------------------------------------------
+
+.. automodule:: src.decoration.yolo_data_prepare_decorator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.decoration
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,27 @@
+src package
+===========
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   src.contracts
+   src.conversion
+   src.data_parsers
+   src.decoration
+   src.deep_learning
+   src.factoring
+   src.features_extraction_algorithms
+   src.json_services
+   src.providing
+   src.sql_services
+
+Module contents
+---------------
+
+.. automodule:: src
+   :members:
+   :undoc-members:
+   :show-inheritance:

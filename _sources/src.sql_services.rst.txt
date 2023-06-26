@@ -1,0 +1,21 @@
+src.sql\_services package
+=========================
+
+Submodules
+----------
+
+src.sql\_services.train\_data\_service module
+---------------------------------------------
+
+.. automodule:: src.sql_services.train_data_service
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.sql_services
+   :members:
+   :undoc-members:
+   :show-inheritance:

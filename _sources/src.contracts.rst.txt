@@ -1,0 +1,24 @@
+src.contracts package
+=====================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   src.contracts.conversion
+   src.contracts.data_access_layer
+   src.contracts.decoration
+   src.contracts.deep_learning
+   src.contracts.dto
+   src.contracts.factoring
+   src.contracts.providing
+
+Module contents
+---------------
+
+.. automodule:: src.contracts
+   :members:
+   :undoc-members:
+   :show-inheritance:

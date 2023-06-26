@@ -1,0 +1,21 @@
+src.providing package
+=====================
+
+Submodules
+----------
+
+src.providing.logging\_path\_provider module
+--------------------------------------------
+
+.. automodule:: src.providing.logging_path_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.providing
+   :members:
+   :undoc-members:
+   :show-inheritance:

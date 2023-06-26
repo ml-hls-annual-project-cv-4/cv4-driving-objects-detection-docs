@@ -1,0 +1,29 @@
+src.contracts.data\_access\_layer package
+=========================================
+
+Submodules
+----------
+
+src.contracts.data\_access\_layer.eda\_data\_service module
+-----------------------------------------------------------
+
+.. automodule:: src.contracts.data_access_layer.eda_data_service
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.contracts.data\_access\_layer.train\_data\_service module
+-------------------------------------------------------------
+
+.. automodule:: src.contracts.data_access_layer.train_data_service
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.contracts.data_access_layer
+   :members:
+   :undoc-members:
+   :show-inheritance:

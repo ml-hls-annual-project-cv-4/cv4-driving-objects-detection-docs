@@ -1,0 +1,21 @@
+src.json\_services package
+==========================
+
+Submodules
+----------
+
+src.json\_services.eda\_data\_service module
+--------------------------------------------
+
+.. automodule:: src.json_services.eda_data_service
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.json_services
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,37 @@
+src.factoring package
+=====================
+
+Submodules
+----------
+
+src.factoring.json\_data\_service\_factory module
+-------------------------------------------------
+
+.. automodule:: src.factoring.json_data_service_factory
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.factoring.sql\_data\_service\_factory module
+------------------------------------------------
+
+.. automodule:: src.factoring.sql_data_service_factory
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.factoring.yolo\_manager\_factory module
+-------------------------------------------
+
+.. automodule:: src.factoring.yolo_manager_factory
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.factoring
+   :members:
+   :undoc-members:
+   :show-inheritance:

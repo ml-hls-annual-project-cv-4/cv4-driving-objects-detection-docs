@@ -1,0 +1,21 @@
+src.deep\_learning package
+==========================
+
+Submodules
+----------
+
+src.deep\_learning.yolo\_model\_manager module
+----------------------------------------------
+
+.. automodule:: src.deep_learning.yolo_model_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.deep_learning
+   :members:
+   :undoc-members:
+   :show-inheritance:

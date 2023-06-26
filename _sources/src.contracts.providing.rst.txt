@@ -1,0 +1,21 @@
+src.contracts.providing package
+===============================
+
+Submodules
+----------
+
+src.contracts.providing.logging\_path\_provider module
+------------------------------------------------------
+
+.. automodule:: src.contracts.providing.logging_path_provider
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.contracts.providing
+   :members:
+   :undoc-members:
+   :show-inheritance:

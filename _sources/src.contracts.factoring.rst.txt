@@ -1,0 +1,29 @@
+src.contracts.factoring package
+===============================
+
+Submodules
+----------
+
+src.contracts.factoring.data\_service\_factory module
+-----------------------------------------------------
+
+.. automodule:: src.contracts.factoring.data_service_factory
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+src.contracts.factoring.deep\_learning\_manager\_factory module
+---------------------------------------------------------------
+
+.. automodule:: src.contracts.factoring.deep_learning_manager_factory
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: src.contracts.factoring
+   :members:
+   :undoc-members:
+   :show-inheritance:
